@@ -8,7 +8,6 @@ files.upload()  # загрузите сюда kaggle.json
 !cp kaggle.json ~/.kaggle/
 !chmod 600 ~/.kaggle/kaggle.json
 
-Артемий, [25.12.2025 14:28]
 # Скачивание Stanford Cars с Kaggle
 !kaggle datasets download -d eduardo4jesus/stanford-cars-dataset
 !unzip stanford-cars-dataset.zip -d dataset
@@ -17,7 +16,6 @@ files.upload()  # загрузите сюда kaggle.json
 import os
 print(os.listdir("dataset"))
 
-Артемий, [25.12.2025 14:28]
 import tensorflow as tf
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
@@ -53,7 +51,6 @@ val_data = train_datagen.flow_from_directory(
     subset='validation'
 )
 
-Артемий, [25.12.2025 14:28]
 from tensorflow.keras.applications import EfficientNetB0
 from tensorflow.keras.layers import Dense, GlobalAveragePooling2D, Dropout
 from tensorflow.keras.models import Model
@@ -82,7 +79,6 @@ model.compile(
 
 model.summary()
 
-Артемий, [25.12.2025 14:28]
 EPOCHS = 25
 
 history = model.fit(
@@ -91,7 +87,6 @@ history = model.fit(
     epochs=EPOCHS
 )
 
-Артемий, [25.12.2025 14:28]
 import matplotlib.pyplot as plt
 
 plt.figure(figsize=(12,5))
@@ -109,7 +104,6 @@ plt.title('Loss')
 
 plt.show()
 
-Артемий, [25.12.2025 14:28]
 html = f"""
 <html>
 <head><title>Car Recognition Report</title></head>
